@@ -22,7 +22,7 @@ Files
 Contains the __RandomLayer__, __MLPRandomLayer__, __RBFRandomLayer__ and __GRBFRandomLayer__ classes.
 
 RandomLayer is a transformer that creates a feature mapping of the
-inputs that corresponds to a layer of hidden units with randomly 
+inputs that corresponds to a layer of hidden units with randomly
 generated components.
 
 The transformed values are a specified function of input activations
@@ -69,7 +69,7 @@ Transfer functions provided are:
 *	inv_multiquadric
 
 MLPRandomLayer and RBFRandomLayer classes are just wrappers around the RandomLayer class, with the _alpha_ mixing parameter set to 1.0 and 0.0 respectively (for 100% MLP input activation, or 100% RBF input activation)
-	
+
 The RandomLayer, MLPRandomLayer, RBFRandomLayer classes can take a callable user
 provided transfer function.  See the docstrings and the example ipython
 notebook for details.
@@ -97,6 +97,7 @@ Requirements
 ------------
 
 Written using Python 2.7.3, numpy 1.6.1, scipy 0.10.1, scikit-learn 0.13.1 and ipython 0.12.1
+Now I change python2 to python3.6.5,and Run successfully in the window environment
 
 References
 ----------
@@ -106,9 +107,8 @@ References
 [2] G.-B. Huang, Q.-Y. Zhu and C.-K. Siew, "Extreme Learning Machine:
           Theory and Applications", Neurocomputing, vol. 70, pp. 489-501,
           2006.
-          
+
 [3] Fernandez-Navarro, et al, "MELM-GRBF: a modified version of the  
           extreme learning machine for generalized radial basis function  
           neural networks", Neurocomputing 74 (2011), 2502-2510
 ```
-
